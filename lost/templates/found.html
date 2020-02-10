@@ -1,0 +1,56 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Odibee+Sans|Zhi+Mang+Xing&display=swap" rel="stylesheet"> 
+
+
+</head>
+<body>
+   <p style="font-size:45px;">Tell what you have found :)
+</p>
+<div>
+    <form method="POST">
+        {% csrf_token%}
+        {{ff.as_p}}
+        <p><button type="button" class="btn btn-dark"><input type="submit" value="Submit"></button>
+        </p></form>
+       
+</div>
+   
+
+
+
+  
+<p > <a href="http://127.0.0.1:8000/lostandfound/">
+    <button type="button" class="btn btn-dark">HOME</button> 
+</a>
+ </p>
+  
+</body>
+
+</html>
+
+
+
+
+<style>
+
+
+p{
+    
+    text-align:center;
+    
+
+}
+
+form{
+    margin-left:auto;
+    margin-right:auto;
+    
+      font-size:30px;
+    
+}
+body{
+    font-family: 'Odibee Sans', cursive;
+}
+</style>
