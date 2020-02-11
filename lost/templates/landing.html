@@ -1,3 +1,5 @@
+{%load staticfiles%}
+
 <html>
 
 <head>
@@ -8,22 +10,50 @@
 
 <body >
  <p>LOST n FOUND<p>
-
- <p>
-      <a href="https://lnf-kiet.herokuapp.com/found/">
-          <button type="button" class="btn btn-dark">FOUND SOMETHING?</button>
-     </a>
-    <a href="https://lnf-kiet.herokuapp.com/lost/" style="padding:20px; ">
-        <button type="button" class="btn btn-dark">LOST ANYTHING?</button>
-    </a>
-    <a href="https://lnf-kiet.herokuapp.com/founditems/">
-        <button type="button" class="btn btn-dark">FOUND ITEMS</button>
-   </a>
-  <a href="https://lnf-kiet.herokuapp.com/lostitems/" style="padding:20px; ">
-      <button type="button" class="btn btn-dark">LOST ITEMS</button>
-  </a>
-    </p>
-
+    
+    <div style="margin: auto;">
+<div style="border:2px solid white; float:left; height:300px; width:200px; border-radius: 20px; ">
+     <a href="https://lnf-kiet.herokuapp.com/found/">
+         <p style="padding-top: 40px;">
+         FOUND SOMETHING !!!!
+     
+         
+         </p> </a>
+    
+    </div>
+    
+    
+    
+    <div style="border:2px solid white; height:300px; width:200px;border-radius: 20px;float:left; ">
+     <a href="https://lnf-kiet.herokuapp.com/lost/">
+         <p style="padding-top: 40px;">
+         LOST ANYTHING?
+         </p> </a>
+    
+    </div>
+    
+       <div style="border:2px solid white; height:300px; width:200px;border-radius: 20px;float:left; ">
+     <a href="https://lnf-kiet.herokuapp.com/founditems//">
+         <p style="padding-top: 40px;">
+         FOUND ITEMS
+         </p> </a>
+    
+    </div>
+    
+    
+ 
+       <div style="border:2px solid white; height:300px; width:200px;border-radius: 20px;float:left; ">
+     <a href="https://lnf-kiet.herokuapp.com/lostitems/">
+         <p style="padding-top: 40px;">
+         LOST ITEMS
+         </p> </a>
+    
+    </div>
+    
+    
+ 
+     
+    </div>
 </body>
 
 
@@ -34,6 +64,9 @@
 
 
 <style>
+    body{
+        background-color: black;
+    }
     button{
         padding:8px;
     }
