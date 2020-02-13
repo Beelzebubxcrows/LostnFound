@@ -2,11 +2,12 @@
 
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Odibee+Sans|Zhi+Mang+Xing&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet"> 
+
 </head>
 <body>
 
-    <p style="text-align:center;font-family: 'Odibee Sans', cursive; font-size:45px; color:white;">THINGS LOST</p>
+    <p style="text-align:center; font-size:45px; color:white;">THINGS LOST</p>
     
 <table>
     
@@ -15,13 +16,18 @@
     
     {%for i in lostitem%}
     <td>
-        <div>{{i.name}}
-            {{i.hostel}}
-            {{i.room}}
-            {{i.room}}
-            {{i.thing}}
-            {{i.description}}
-        
+        <div>
+             <p>{{i.name}}
+            </p>
+            <p> {{i.hostel}}
+            </p> 
+            <p>{{i.room}}
+            </p> 
+            <p>{{i.thing}}
+            </p> 
+            <p>{{i.description}}
+        </p> 
+            
         </div></td>
     {%endfor%}
 
@@ -47,11 +53,9 @@
 
 <style>
 td,th{
+    color: aliceblue;
     border: 1.2px solid white;
-    padding:8px;
-    font-size: 30px;
-    font-family: 'Zhi Mang Xing', cursive;
-
+    
 }
     div{
         height: 300px;
@@ -61,13 +65,25 @@ td,th{
     
     }
 p{
-    font-family: 'Odibee Sans', cursive;
+    color:aliceblue;
+   font-family: 'Lacquer', sans-serif;
     text-align:center;
 
 }
+    td{
+        
+    border: 6px solid whitesmoke;
+    }
 table{
-    margin-right: auto;
-    margin-left: auto;}
+     
+    border-collapse:separate; 
+      border-spacing: 30px; 
+        margin-left: auto;
+        margin-right:auto;}
+    p{
+         color:whitesmoke;
+        padding-top: 25px;
+    }
     
     body{
         background-color: black;
