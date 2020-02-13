@@ -6,36 +6,34 @@
 </head>
 <body>
 
-    <p style="text-align:center;font-family: 'Odibee Sans', cursive; font-size:45px;">THINGS LOST</p>
-    <table style="margin-left: auto; margin-right: auto; ">
-
-<th>Hostel name</th>
-<th>Name</th>
-<th>Room number</th>
-<th>Thing lost</th>
-<th>Description</th>
-
-
-
-
-
-
-{% for i in lostitem%}
-            <tr>
-        <td>{{i.hostel}}</td>
-            <td>{{i.name}}</td>
-           <td>{{i.room}}</td> 
-           <td>{{i.thing}}</td>
-           <td> {{i.description}}</td> 
-        </tr>
-            {%endfor%}
-            
+    <p style="text-align:center;font-family: 'Odibee Sans', cursive; font-size:45px; color:white;">THINGS LOST</p>
+    
+<table>
+    
+   <tr>
+    
+    
+    {%for i in lostitem%}
+    <td>
+        <div>{{i.name}}
+            {{i.hostel}}
+            {{i.room}}
+            {{i.room}}
+            {{i.thing}}
+            {{i.description}}
         
+        </div></td>
+    {%endfor%}
 
-
+    
+    </tr> 
+    
+    
+    
+    
+    
     </table>
-
-   
+          
   
 <p > <a href="https://lnf-kiet.herokuapp.com/lostandfound/">
     <button type="button" class="btn btn-dark">HOME</button> 
@@ -49,19 +47,30 @@
 
 <style>
 td,th{
-    border: 1px solid black;
+    border: 1.2px solid white;
     padding:8px;
     font-size: 30px;
     font-family: 'Zhi Mang Xing', cursive;
 
 }
+    div{
+        height: 300px;
+        width:200px;
+        float:left;
+        background-color:darkslateblue;
+    
+    }
 p{
     font-family: 'Odibee Sans', cursive;
     text-align:center;
 
 }
 table{
-    border: 4px solid black;
-}
+    margin-right: auto;
+    margin-left: auto;}
+    
+    body{
+        background-color: black;
+    }
 
 </style>
