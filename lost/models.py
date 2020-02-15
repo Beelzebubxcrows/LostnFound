@@ -14,6 +14,9 @@ class Found(models.Model):
     Name=models.CharField(max_length=15, blank=False)
     Place=models.CharField(max_length=15, blank=False)
     Thing=models.CharField(max_length=15, blank=False)
+    contact= models.IntegerField(blank=False)
     Description=models.CharField(max_length=30, blank=False)
+
+    
     
     
