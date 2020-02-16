@@ -1,3 +1,4 @@
+{%load crispy_forms_tags%}
 <html>
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -6,26 +7,28 @@
 
 </head>
 <body>
-   <p style="font-size:45px;">Tell what you have found :)
+   <p style="font-size:45px; text-align:center;">REGISTER YOURSELF HERE
 </p>
-<div>
+
+<div class="container">
     <form method="POST">
         {% csrf_token%}
-        {{ff.as_p}}
+        {{form|crispy}}
         <p><button type="submit"  class="btn btn-dark">SUBMIT</button>
         </p></form>
+          
+<p > <a href="https://lnf-kiet.herokuapp.com/login/">
+    <button type="button" class="btn btn-dark">LOGIN HERE</button> 
+</a>
+ </p>
+  
        
 </div>
    
 
 
 
-  
-<p > <a href="https://lnf-kiet.herokuapp.com/lostandfound/">
-    <button type="button" class="btn btn-dark">HOME</button> 
-</a>
- </p>
-  
+
 </body>
 
 </html>
@@ -36,18 +39,11 @@
 <style>
 
 
-p{
-    
-    text-align:center;
-    
 
-}
 
 form{
-    margin-left:auto;
-    margin-right:auto;
-    
-      font-size:30px;
+   
+      font-size:20px;
     
 }
 body{

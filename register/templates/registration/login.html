@@ -6,13 +6,13 @@
 
 </head>
 <body>
-   <p style="font-size:45px;">Tell what you have found :)
+   <p style="font-size:45px;">LOGIN HERE
 </p>
 <div>
     <form method="POST">
         {% csrf_token%}
-        {{ff.as_p}}
-        <p><button type="submit"  class="btn btn-dark">SUBMIT</button>
+        {{form.as_p}}
+        <p><button type="submit"  class="btn btn-dark">LOGIN</button>
         </p></form>
        
 </div>
@@ -21,8 +21,8 @@
 
 
   
-<p > <a href="https://lnf-kiet.herokuapp.com/lostandfound/">
-    <button type="button" class="btn btn-dark">HOME</button> 
+<p > <a href="https://lnf-kiet.herokuapp.com/register/">
+    <button type="button" class="btn btn-dark">NEW USER? SIGN UP HERE!!</button> 
 </a>
  </p>
   
