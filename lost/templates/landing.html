@@ -1,5 +1,7 @@
 {%load staticfiles%}
 
+{% if user.is_authenticated%}
+ {%block content%}
 <html>
 
 <head>
@@ -97,7 +99,13 @@
 
 </html>
 
+{%endblock%}
+{%else%}
 
+<a href="https://lnf-kiet.herokuapp.com/login/">login first</a>
+
+
+{%endif%}
 <style>
     body{
         

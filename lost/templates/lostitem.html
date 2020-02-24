@@ -1,3 +1,5 @@
+{% if user.is_authenticated%}
+{%block content%}
 <html>
 
 <head>
@@ -11,10 +13,11 @@
     
 <table>
     
-   <tr>
-    
+   
     
     {%for i in lostitem%}
+    <tr>
+    
     <td>
         <div>
              <p>{{i.name}}
@@ -29,10 +32,11 @@
         </p> 
             
         </div></td>
+    </tr> 
     {%endfor%}
 
     
-    </tr> 
+    
     
     
     
@@ -50,6 +54,14 @@
 
 
 </html>
+
+{%endblock%}
+{%else%}
+
+<a href="https://lnf-kiet.herokuapp.com/login/">login first</a>
+
+
+{%endif%}
 
 <style>
 td,tr{
