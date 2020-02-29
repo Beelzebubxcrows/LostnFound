@@ -5,17 +5,19 @@
 
 
 </head>
+
 <body>
-   <p style="font-size:45px;">LOGIN HERE
-</p>
-<div>
+
+    <div>
+   <p style="font-size:45px;">LOGIN HERE</p>
+
     <form method="POST">
         {% csrf_token%}
         {{form.as_p}}
         <p><button type="submit"  class="btn btn-dark">LOGIN</button>
         </p></form>
        
-</div>
+
    
 
 
@@ -25,7 +27,7 @@
     <button type="button" class="btn btn-dark">NEW USER? SIGN UP HERE!!</button> 
 </a>
  </p>
-  
+</div>
 </body>
 
 </html>
@@ -50,7 +52,15 @@ form{
       font-size:30px;
     
 }
-body{
+div{
     font-family: 'Odibee Sans', cursive;
+    
+
 }
+
+body{
+    background-color:teal;
+}
+
+
 </style>
