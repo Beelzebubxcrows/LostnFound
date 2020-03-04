@@ -15,7 +15,7 @@
         <p> WELCOME TO LOST AND FOUND</p>
         <form method="POST" >
         
-        
+        {%csrf_token%}
         {{form.as_p}}
             <p><button type="submit" class="btn btn-dark">LOG IN</button>
         </p>
