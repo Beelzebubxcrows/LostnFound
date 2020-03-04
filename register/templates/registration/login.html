@@ -1,66 +1,53 @@
 <html>
+
 <head>
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Odibee+Sans|Zhi+Mang+Xing&display=swap" rel="stylesheet"> 
-
-
-</head>
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet"> 
+    
+    </head>
 
 <body>
-
+   <p>
+    
+    
     <div>
-   <p style="font-size:45px;">LOGIN HERE</p>
-
-    <form method="POST">
-        {% csrf_token%}
+        <p> WELCOME TO LOST AND FOUND</p>
+        <form >
+        
+        
         {{form.as_p}}
-        <p><button type="submit"  class="btn btn-dark">LOGIN</button>
-        </p></form>
-       
+            <p><button type="submit" class="btn btn-dark">LOG IN</button>
+        </p>
+        </form>
+        <p><a href="">New User? Sign Up</a>
+    </p></div>
+    
+    
+    
+    
+    </p> 
+    </body>
 
-   
-
-
-
-  
-<p > <a href="https://lnf-kiet.herokuapp.com/register/">
-    <button type="button" class="btn btn-dark">NEW USER? SIGN UP HERE!!</button> 
-</a>
- </p>
-</div>
-</body>
-
+    
 </html>
 
-
-
-
 <style>
-
-
-p{
+    body{
+        font-family: 'Anton', sans-serif;
+    }
+    div{
+        width:40%;
+        height: 60%;
+        background-color: white;
+        margin:auto;
+        border: 2px solid grey;
+      
+    }p{
+        text-align: center;
+    }
+    body{
+        background-color: black;
+    }
     
-    text-align:center;
-    
-
-}
-
-form{
-    margin-left:auto;
-    margin-right:auto;
-    
-      font-size:30px;
-    
-}
-div{
-    font-family: 'Odibee Sans', cursive;
-    
-
-}
-
-body{
-    background-color:teal;
-}
-
-
 </style>

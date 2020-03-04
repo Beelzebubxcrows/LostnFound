@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.db.models import Q
 from lost.forms import formlost,formfound
 from lost.models import Lost, Found
 def lost(request):
@@ -43,3 +44,4 @@ def found(request):
 def founditems(request):
     founditem= Found.objects.all()
     return render(request, 'founditems.html',{'j':founditem})
+
